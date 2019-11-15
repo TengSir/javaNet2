@@ -1,0 +1,35 @@
+IO输入输出
+流是IO业务重要的工具类
+
+javaIO流按照分类方式不同可以分为如下三种不同分类结果
+
+1.数据操作方向： 输入和输出
+2.处理数据的单位：字节和字符
+3.按照功能强弱：节点流（单一功能流，简单流）和过滤流（高级流，功能比较强大）
+
+
+字节流上层父类：
+
+InputStream   OutputStream
+
+FileInputStream   FileOutputStream
+
+BufferedInputStream BufferedOutputstream
+
+DataInputStream DataOutputStream （专门针对八种基本数据类型）
+
+ObjectInputStream 反序列化流 ObjectOutputStream  序列化(对象输入输出流 序列化和反序列化流)
+ObjectOutputStream可以将java运行时内存中的对象序列化（持久化=存储）到磁盘文件上（实际上是一种简单的数据存储机制=不安全）
+注意：java虽然支持将创建的对象存储到文件中，但是默认不开启这个功能，如果想要将某个累的对象存储到文件中，需要让该类实现
+java.io.serilizable 接口（标记型接口=只声明，没有任何方法要实现）
+
+
+Reader  Writer
+
+FileReader  FileWriter  ===节点流（功能简单的流）
+
+BufferedReader BufferedWriter  ==过滤流（功能强大的流）
+
+InputStreamReader OutputStreamWriter==过滤流（功能强大的流）字节转字符的功能流
+
+PrintWriter
