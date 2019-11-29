@@ -1,34 +1,25 @@
 package edu.hbuas.javanet.t3;
-
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.channels.SelectionKey;
 import java.util.UUID;
-
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JTextField;
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JFileChooser;
 import javax.swing.JTextArea;
-
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 public class URLDownloader extends JFrame {
-
 	private JPanel contentPane;
 	private JTextField textField;
-
 	/**
 	 * Launch the application.
 	 */
@@ -45,7 +36,6 @@ public class URLDownloader extends JFrame {
 			}
 		});
 	}
-
 	/**
 	 * Create the frame.
 	 */

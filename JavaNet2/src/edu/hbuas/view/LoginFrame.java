@@ -1,7 +1,5 @@
 package edu.hbuas.view;
-
 import java.awt.EventQueue;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -9,13 +7,10 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
-
 public class LoginFrame extends JFrame {
-
 	private JPanel contentPane;
 	private JTextField textField;
 	private JPasswordField passwordField;
-
 	/**
 	 * Launch the application.
 	 */
@@ -24,7 +19,7 @@ public class LoginFrame extends JFrame {
 			public void run() {
 				try {
 					LoginFrame frame = new LoginFrame();
-					frame.setVisible(true);
+					frame.setVisible(true); 
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

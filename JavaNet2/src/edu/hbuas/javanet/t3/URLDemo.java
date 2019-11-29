@@ -1,11 +1,8 @@
 package edu.hbuas.javanet.t3;
 
-import java.io.BufferedReader;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.URL;
-
 public class URLDemo {
 	public static void main(String[] args) throws Exception {
 //		URL  u=new URL("http://103.235.46.39/");
@@ -19,7 +16,6 @@ public class URLDemo {
 //		while((message=reader.readLine())!=null) {
 //			System.out.println(message);
 //		}
-//		
 		
 		URL  img=new URL("https://pacakge.cache.wpscdn.cn/wps/download/W.P.S.9208.12012.2019.exe");
 		
@@ -36,9 +32,5 @@ public class URLDemo {
 		out.flush();
 		out.close();
 		in.close();
-		
-		
-		
 	}
-
 }
